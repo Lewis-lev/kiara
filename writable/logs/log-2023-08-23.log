@@ -1,0 +1,162 @@
+CRITICAL - 2023-08-23 23:20:09 --> preg_match(): Argument #2 ($subject) must be of type string, CodeIgniter\Email\Email given
+in SYSTEMPATH\Email\Email.php on line 475.
+ 1 SYSTEMPATH\Email\Email.php(475): preg_match('/\\<(.*)\\>/', Object(CodeIgniter\Email\Email), null)
+ 2 APPPATH\Controllers\Home.php(26): CodeIgniter\Email\Email->setFrom(Object(CodeIgniter\Email\Email), 'Bima')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->sendEmail()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\File\\code\\kiara\\kiara_ci\\public\\index.php')
+CRITICAL - 2023-08-23 23:26:06 --> preg_match(): Argument #2 ($subject) must be of type string, CodeIgniter\Email\Email given
+in SYSTEMPATH\Email\Email.php on line 475.
+ 1 SYSTEMPATH\Email\Email.php(475): preg_match('/\\<(.*)\\>/', Object(CodeIgniter\Email\Email), null)
+ 2 APPPATH\Controllers\Home.php(26): CodeIgniter\Email\Email->setFrom(Object(CodeIgniter\Email\Email), 'bima')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->sendEmail()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\File\\code\\kiara\\kiara_ci\\public\\index.php')
+CRITICAL - 2023-08-23 23:29:26 --> preg_match(): Argument #2 ($subject) must be of type string, CodeIgniter\Email\Email given
+in SYSTEMPATH\Email\Email.php on line 475.
+ 1 SYSTEMPATH\Email\Email.php(475): preg_match('/\\<(.*)\\>/', Object(CodeIgniter\Email\Email), null)
+ 2 APPPATH\Controllers\Home.php(26): CodeIgniter\Email\Email->setFrom(Object(CodeIgniter\Email\Email), 'Lewss__')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->sendEmail()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\File\\code\\kiara\\kiara_ci\\public\\index.php')
+ERROR - 2023-08-23 23:32:25 --> Email: sendWithMail throwed ErrorException: mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in D:\File\code\kiara\kiara_ci\system\Email\Email.php:1735
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mail(): Failed ...', 'D:\\File\\code\\ki...', 1735)
+#1 D:\File\code\kiara\kiara_ci\system\Email\Email.php(1735): mail('madanishofa@gma...', '=?UTF-8?Q?Bima?...', 'Bonjour\r\n', 'Date: Wed, 23 A...', '-f iotanine69@g...')
+#2 D:\File\code\kiara\kiara_ci\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithMail()
+#3 D:\File\code\kiara\kiara_ci\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#4 D:\File\code\kiara\kiara_ci\app\Controllers\Home.php(31): CodeIgniter\Email\Email->send()
+#5 D:\File\code\kiara\kiara_ci\system\CodeIgniter.php(932): App\Controllers\Home->sendEmail()
+#6 D:\File\code\kiara\kiara_ci\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\File\code\kiara\kiara_ci\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\File\code\kiara\kiara_ci\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 D:\File\code\kiara\kiara_ci\system\Commands\Server\rewrite.php(47): require_once('D:\\File\\code\\ki...')
+#10 {main}
+ERROR - 2023-08-23 23:32:25 --> Email: Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.
+ERROR - 2023-08-23 23:32:25 --> 
+ERROR - 2023-08-23 23:33:01 --> Email: sendWithMail throwed ErrorException: mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in D:\File\code\kiara\kiara_ci\system\Email\Email.php:1735
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mail(): Failed ...', 'D:\\File\\code\\ki...', 1735)
+#1 D:\File\code\kiara\kiara_ci\system\Email\Email.php(1735): mail('madanishofa@gma...', '=?UTF-8?Q?bima?...', 'Hola\r\n', 'Date: Wed, 23 A...', '-f iotanine69@g...')
+#2 D:\File\code\kiara\kiara_ci\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithMail()
+#3 D:\File\code\kiara\kiara_ci\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#4 D:\File\code\kiara\kiara_ci\app\Controllers\Home.php(31): CodeIgniter\Email\Email->send()
+#5 D:\File\code\kiara\kiara_ci\system\CodeIgniter.php(932): App\Controllers\Home->sendEmail()
+#6 D:\File\code\kiara\kiara_ci\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\File\code\kiara\kiara_ci\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\File\code\kiara\kiara_ci\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 D:\File\code\kiara\kiara_ci\system\Commands\Server\rewrite.php(47): require_once('D:\\File\\code\\ki...')
+#10 {main}
+ERROR - 2023-08-23 23:33:01 --> Email: Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.
+ERROR - 2023-08-23 23:33:01 --> 
+ERROR - 2023-08-23 23:37:32 --> Email: sendWithMail throwed ErrorException: mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in D:\File\code\kiara\kiara_ci\system\Email\Email.php:1735
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mail(): Failed ...', 'D:\\File\\code\\ki...', 1735)
+#1 D:\File\code\kiara\kiara_ci\system\Email\Email.php(1735): mail('madanishofa@gma...', '=?UTF-8?Q?Bima?...', 'Hola\r\n', 'Date: Wed, 23 A...', '-f iotanine69@g...')
+#2 D:\File\code\kiara\kiara_ci\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithMail()
+#3 D:\File\code\kiara\kiara_ci\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#4 D:\File\code\kiara\kiara_ci\app\Controllers\Home.php(31): CodeIgniter\Email\Email->send()
+#5 D:\File\code\kiara\kiara_ci\system\CodeIgniter.php(932): App\Controllers\Home->sendEmail()
+#6 D:\File\code\kiara\kiara_ci\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\File\code\kiara\kiara_ci\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\File\code\kiara\kiara_ci\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 D:\File\code\kiara\kiara_ci\system\Commands\Server\rewrite.php(47): require_once('D:\\File\\code\\ki...')
+#10 {main}
+ERROR - 2023-08-23 23:37:32 --> Email: Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.
+ERROR - 2023-08-23 23:37:32 --> 
+ERROR - 2023-08-23 23:39:07 --> Email: sendWithMail throwed ErrorException: mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in D:\File\code\kiara\kiara_ci\system\Email\Email.php:1735
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mail(): Failed ...', 'D:\\File\\code\\ki...', 1735)
+#1 D:\File\code\kiara\kiara_ci\system\Email\Email.php(1735): mail('iotanine69@gmai...', '=?UTF-8?Q?shofa...', 'Hola\r\n', 'Date: Wed, 23 A...', '-f madanishofa@...')
+#2 D:\File\code\kiara\kiara_ci\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithMail()
+#3 D:\File\code\kiara\kiara_ci\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#4 D:\File\code\kiara\kiara_ci\app\Controllers\Home.php(31): CodeIgniter\Email\Email->send()
+#5 D:\File\code\kiara\kiara_ci\system\CodeIgniter.php(932): App\Controllers\Home->sendEmail()
+#6 D:\File\code\kiara\kiara_ci\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\File\code\kiara\kiara_ci\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\File\code\kiara\kiara_ci\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 D:\File\code\kiara\kiara_ci\system\Commands\Server\rewrite.php(47): require_once('D:\\File\\code\\ki...')
+#10 {main}
+ERROR - 2023-08-23 23:39:07 --> Email: Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.
+ERROR - 2023-08-23 23:39:07 --> 
+ERROR - 2023-08-23 23:40:55 --> Email: sendWithMail throwed ErrorException: mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in D:\File\code\kiara\kiara_ci\system\Email\Email.php:1735
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mail(): Failed ...', 'D:\\File\\code\\ki...', 1735)
+#1 D:\File\code\kiara\kiara_ci\system\Email\Email.php(1735): mail('netf0391@gmail....', '=?UTF-8?Q?lewis...', 'Bonjour\r\n', 'Date: Wed, 23 A...', '-f madanishofa@...')
+#2 D:\File\code\kiara\kiara_ci\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithMail()
+#3 D:\File\code\kiara\kiara_ci\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#4 D:\File\code\kiara\kiara_ci\app\Controllers\Home.php(31): CodeIgniter\Email\Email->send()
+#5 D:\File\code\kiara\kiara_ci\system\CodeIgniter.php(932): App\Controllers\Home->sendEmail()
+#6 D:\File\code\kiara\kiara_ci\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\File\code\kiara\kiara_ci\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\File\code\kiara\kiara_ci\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 D:\File\code\kiara\kiara_ci\system\Commands\Server\rewrite.php(47): require_once('D:\\File\\code\\ki...')
+#10 {main}
+ERROR - 2023-08-23 23:40:55 --> Email: Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.
+ERROR - 2023-08-23 23:40:55 --> 
+ERROR - 2023-08-23 23:47:49 --> Email: sendWithMail throwed ErrorException: mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in D:\File\code\kiara\kiara_ci\system\Email\Email.php:1735
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mail(): Failed ...', 'D:\\File\\code\\ki...', 1735)
+#1 D:\File\code\kiara\kiara_ci\system\Email\Email.php(1735): mail('netf0391@gmail....', '=?UTF-8?Q?lewis...', 'Hola\r\n', 'Date: Wed, 23 A...', '-f madanishofa@...')
+#2 D:\File\code\kiara\kiara_ci\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithMail()
+#3 D:\File\code\kiara\kiara_ci\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#4 D:\File\code\kiara\kiara_ci\app\Controllers\Home.php(32): CodeIgniter\Email\Email->send()
+#5 D:\File\code\kiara\kiara_ci\system\CodeIgniter.php(932): App\Controllers\Home->sendEmail()
+#6 D:\File\code\kiara\kiara_ci\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\File\code\kiara\kiara_ci\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\File\code\kiara\kiara_ci\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 D:\File\code\kiara\kiara_ci\system\Commands\Server\rewrite.php(47): require_once('D:\\File\\code\\ki...')
+#10 {main}
+ERROR - 2023-08-23 23:47:49 --> Email: Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.
+ERROR - 2023-08-23 23:47:49 --> 
+ERROR - 2023-08-23 23:50:09 --> Email: sendWithMail throwed ErrorException: mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in D:\File\code\kiara\kiara_ci\system\Email\Email.php:1735
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mail(): Failed ...', 'D:\\File\\code\\ki...', 1735)
+#1 D:\File\code\kiara\kiara_ci\system\Email\Email.php(1735): mail('madanishofa@gma...', '=?UTF-8?Q?Madan...', 'hola\r\n', 'Date: Wed, 23 A...', '-f iotanine69@g...')
+#2 D:\File\code\kiara\kiara_ci\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithMail()
+#3 D:\File\code\kiara\kiara_ci\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#4 D:\File\code\kiara\kiara_ci\app\Controllers\Home.php(32): CodeIgniter\Email\Email->send()
+#5 D:\File\code\kiara\kiara_ci\system\CodeIgniter.php(932): App\Controllers\Home->sendEmail()
+#6 D:\File\code\kiara\kiara_ci\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\File\code\kiara\kiara_ci\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\File\code\kiara\kiara_ci\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 D:\File\code\kiara\kiara_ci\system\Commands\Server\rewrite.php(47): require_once('D:\\File\\code\\ki...')
+#10 {main}
+ERROR - 2023-08-23 23:50:09 --> Email: Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.
+ERROR - 2023-08-23 23:50:09 --> 
+ERROR - 2023-08-23 23:55:09 --> Email: sendWithMail throwed ErrorException: mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in D:\File\code\kiara\kiara_ci\system\Email\Email.php:1735
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mail(): Failed ...', 'D:\\File\\code\\ki...', 1735)
+#1 D:\File\code\kiara\kiara_ci\system\Email\Email.php(1735): mail('madanishofa@gma...', '=?UTF-8?Q?iota?...', 'bonjour\r\n', 'Date: Wed, 23 A...', '-f iotanine69@g...')
+#2 D:\File\code\kiara\kiara_ci\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithMail()
+#3 D:\File\code\kiara\kiara_ci\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#4 D:\File\code\kiara\kiara_ci\app\Controllers\Home.php(32): CodeIgniter\Email\Email->send()
+#5 D:\File\code\kiara\kiara_ci\system\CodeIgniter.php(932): App\Controllers\Home->sendEmail()
+#6 D:\File\code\kiara\kiara_ci\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\File\code\kiara\kiara_ci\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\File\code\kiara\kiara_ci\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 D:\File\code\kiara\kiara_ci\system\Commands\Server\rewrite.php(47): require_once('D:\\File\\code\\ki...')
+#10 {main}
+ERROR - 2023-08-23 23:55:09 --> Email: Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.
+ERROR - 2023-08-23 23:55:09 --> 
+ERROR - 2023-08-23 23:56:08 --> Email: sendWithMail throwed ErrorException: mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in D:\File\code\kiara\kiara_ci\system\Email\Email.php:1735
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mail(): Failed ...', 'D:\\File\\code\\ki...', 1735)
+#1 D:\File\code\kiara\kiara_ci\system\Email\Email.php(1735): mail('madanishofa@gma...', '=?UTF-8?Q?iota?...', 'bonjour\r\n', 'Date: Wed, 23 A...', '-f iotanine69@g...')
+#2 D:\File\code\kiara\kiara_ci\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithMail()
+#3 D:\File\code\kiara\kiara_ci\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#4 D:\File\code\kiara\kiara_ci\app\Controllers\Home.php(30): CodeIgniter\Email\Email->send()
+#5 D:\File\code\kiara\kiara_ci\system\CodeIgniter.php(932): App\Controllers\Home->sendEmail()
+#6 D:\File\code\kiara\kiara_ci\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\File\code\kiara\kiara_ci\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\File\code\kiara\kiara_ci\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 D:\File\code\kiara\kiara_ci\system\Commands\Server\rewrite.php(47): require_once('D:\\File\\code\\ki...')
+#10 {main}
+ERROR - 2023-08-23 23:56:08 --> Email: Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.
+ERROR - 2023-08-23 23:56:08 --> 

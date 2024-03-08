@@ -1,0 +1,149 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.kiara-nav {
+    background-color: #980202;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+
+    width: 100%;
+    height: 16vh;
+}
+
+.kiara-nav .logo{    
+    font-size: 30px;
+    padding: 0 50px;
+    line-height: 90px;
+}
+
+.kiara-nav a {
+    color: white !important;
+    text-decoration: none;
+}
+
+.kiara-nav ul {
+    float: right;
+    font-size: 20px;
+}
+
+.kiara-nav ul li {
+    display: inline-block;
+    line-height: 90px;
+    margin-right: 50px;
+    font-size: 18px;
+}
+
+.kiara-nav .checkbtn {
+    float: right;
+    line-height: 90px;
+    margin-right: 50px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 900px) {
+    .kiara-nav .logo {
+        font-size: 25px;
+    }
+
+    .kiara-nav .logo img {
+        width: auto;
+        height: 50px;
+    }
+
+    .kiara-nav ul li {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 700px) {
+    .kiara-nav {
+        height: 14dvh;
+    }
+
+    /* .kiara-nav .checkbtn {
+        display: block;
+        margin-right: 20px;
+    } */
+
+    .kiara-nav .logo {
+        padding-left: 10px;
+        font-size: 15px;
+    }
+
+    .kiara-nav .logo img {
+        width: auto;
+        height: 30px;
+    }
+
+    .kiara-nav ul {
+        position: fixed;
+        background-color: #980202;
+
+        width: 100%;
+        height: 80vh;
+
+        top: 90px;
+        left: -100%;
+
+        text-align: center;
+
+        transition: all .5s;
+    }
+
+    .kiara-nav ul li {
+        display: block;
+    }
+
+    .kiara-nav ul li a {
+        font-size: 20px;
+    }
+
+    .kiara-nav ul li a:hover, .kiara-nav ul li a:active {
+        background: none;
+        color: black;
+    }
+
+    #check:checked ~ ul {
+        left: 0;
+    }
+
+
+}
+
+.kiara-footer .outter {
+    background-color: #980202;
+    height: 200px;
+  }
+  
+.kiara-footer .outter .text {
+background-color: #980202;
+color: white;
+
+font-size: 30px;
+font-weight: bold;
+
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+flex-direction: column;
+}
+
+.grid {
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
