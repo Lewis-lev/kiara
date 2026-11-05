@@ -1,149 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+
+:root {
+  font-family: 'DM Sans', sans-serif;
+  color: #242729;
+  background: #f3f1ec;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  scroll-behavior: smooth;
+  --charcoal: #242729;
+  --charcoal-deep: #191b1d;
+  --off-white: #f3f1ec;
+  --red: #a5141c;
+  --red-dark: #8d1017;
+  --steel: #879198;
+  --steel-light: #c4c9c8;
+  --amber: #e4a834;
+  --muted: #676d70;
+  --display: 'Manrope', sans-serif;
+  --mono: 'DM Mono', monospace;
+}
+
 * {
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    list-style: none;
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  scroll-padding-top: 20px;
 }
 
 body {
-    font-family: sans-serif;
+  min-width: 320px;
+  margin: 0;
 }
 
-.kiara-nav {
-    background-color: #980202;
-    position: fixed;
-    top: 0;
-    z-index: 1000;
-
-    width: 100%;
-    height: 16vh;
+button,
+a {
+  font: inherit;
 }
 
-.kiara-nav .logo{    
-    font-size: 30px;
-    padding: 0 50px;
-    line-height: 90px;
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
-.kiara-nav a {
-    color: white !important;
-    text-decoration: none;
+button {
+  color: inherit;
 }
 
-.kiara-nav ul {
-    float: right;
-    font-size: 20px;
+img,
+svg {
+  display: block;
 }
 
-.kiara-nav ul li {
-    display: inline-block;
-    line-height: 90px;
-    margin-right: 50px;
-    font-size: 18px;
+img {
+  max-width: 100%;
 }
 
-.kiara-nav .checkbtn {
-    float: right;
-    line-height: 90px;
-    margin-right: 50px;
-    cursor: pointer;
-    display: none;
+::selection {
+  color: var(--off-white);
+  background: var(--red);
 }
 
-#check {
-    display: none;
+:focus-visible {
+  outline: 2px solid var(--amber);
+  outline-offset: 4px;
 }
 
-@media (max-width: 900px) {
-    .kiara-nav .logo {
-        font-size: 25px;
-    }
-
-    .kiara-nav .logo img {
-        width: auto;
-        height: 50px;
-    }
-
-    .kiara-nav ul li {
-        font-size: 16px;
-    }
-}
-
-@media (max-width: 700px) {
-    .kiara-nav {
-        height: 14dvh;
-    }
-
-    /* .kiara-nav .checkbtn {
-        display: block;
-        margin-right: 20px;
-    } */
-
-    .kiara-nav .logo {
-        padding-left: 10px;
-        font-size: 15px;
-    }
-
-    .kiara-nav .logo img {
-        width: auto;
-        height: 30px;
-    }
-
-    .kiara-nav ul {
-        position: fixed;
-        background-color: #980202;
-
-        width: 100%;
-        height: 80vh;
-
-        top: 90px;
-        left: -100%;
-
-        text-align: center;
-
-        transition: all .5s;
-    }
-
-    .kiara-nav ul li {
-        display: block;
-    }
-
-    .kiara-nav ul li a {
-        font-size: 20px;
-    }
-
-    .kiara-nav ul li a:hover, .kiara-nav ul li a:active {
-        background: none;
-        color: black;
-    }
-
-    #check:checked ~ ul {
-        left: 0;
-    }
-
-
-}
-
-.kiara-footer .outter {
-    background-color: #980202;
-    height: 200px;
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
   }
-  
-.kiara-footer .outter .text {
-background-color: #980202;
-color: white;
-
-font-size: 30px;
-font-weight: bold;
-
-display: flex;
-align-items: center;
-justify-content: center;
-text-align: center;
-flex-direction: column;
-}
-
-.grid {
-    display: grid;
-    grid-template-rows: 1fr auto;
 }
