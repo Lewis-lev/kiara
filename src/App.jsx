@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react';
 
+const asset = (path) => `${import.meta.env.BASE_URL}${path}`;
+
 const services = [
   {
     title: 'Rope access',
@@ -100,7 +102,7 @@ function App() {
       <header className="site-header">
         <nav className="navigation" aria-label="Main navigation">
           <a className="brand" href="#home" onClick={closeMenu}>
-            <img src="/img/logo.png" alt="" />
+            <img src={asset('img/logo.png')} alt="" />
             <span>KIARA <b>ROPE ACCESS</b></span>
           </a>
           <button
@@ -168,7 +170,7 @@ function App() {
 
         <section className="about section-wrap" id="about">
           <div className="about-visual" data-reveal>
-            <img src="/img/img-aboutus.jpg" alt="Rope access building maintenance in action" />
+            <img src={asset('img/img-aboutus.jpg')} alt="Rope access building maintenance in action" />
             <div className="about-stamp">
               <span>ACCESS</span>
               <strong>WITH<br />PURPOSE</strong>
@@ -218,7 +220,7 @@ function App() {
                     aria-label={`Discuss ${service.title} with Kiara on WhatsApp`}
                   >
                     <div className="service-image">
-                      <img src={`/img/services/${service.image}`} alt="" loading="lazy" />
+                      <img src={asset(`img/services/${service.image}`)} alt="" loading="lazy" />
                       <span className="service-number">0{index + 1}</span>
                       <span className="service-arrow"><ArrowIcon /></span>
                     </div>
@@ -308,7 +310,7 @@ function App() {
           </div>
           <div className="footer-bottom">
             <a className="footer-brand" href="#home">
-              <img src="/img/logo.png" alt="" />
+              <img src={asset('img/logo.png')} alt="" />
               <span>KIARA <b>ROPE ACCESS</b></span>
             </a>
             <span>Building care, Yogyakarta</span>

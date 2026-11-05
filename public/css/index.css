@@ -148,7 +148,7 @@
   right: 0;
   bottom: 0;
   width: 66%;
-  background: url('/img/bg-1content.jpg') center 48% / cover no-repeat;
+  background: url('../img/bg-1content.jpg') center 48% / cover no-repeat;
 }
 
 .hero-content {

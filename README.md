@@ -21,7 +21,15 @@ npm run preview
 ```
 
 The production site is generated in `dist/`. Deploy the contents of that
-directory to a static web host. For Apache, the included `.htaccess` supports
-single-page application routes.
+directory to a static web host.
 
 Images and the existing site assets are served from `public/img/`.
+
+## Deploy to GitHub Pages
+
+The GitHub Actions workflow builds the site with Node.js and deploys it to
+GitHub Pages whenever changes are pushed to `main`. In the repository settings,
+open **Pages** and set the build and deployment source to **GitHub Actions**.
+
+The Vite build uses relative asset paths so the site works from the repository
+subpath on GitHub Pages.
