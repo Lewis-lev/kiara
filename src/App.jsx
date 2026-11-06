@@ -141,7 +141,7 @@ function App() {
               can’t reach.
             </p>
             <div className="hero-actions">
-              <a className="button button-amber" href={whatsappLink('Hello Kiara, I would like to discuss building maintenance.') } target="_blank" rel="noreferrer">
+              <a className="button button-amber" href={whatsappLink('Hello Kiara, I would like to discuss building maintenance.')} target="_blank" rel="noreferrer">
                 Discuss your project <ArrowIcon />
               </a>
               <a className="hero-secondary" href="#services">Explore services <span>↓</span></a>
@@ -309,11 +309,11 @@ function App() {
             </a>
           </div>
           <div className="footer-bottom">
+            <span>shofa.</span>
             <a className="footer-brand" href="#home">
               <img src={asset('img/logo.png')} alt="" />
               <span>KIARA <b>ROPE ACCESS</b></span>
             </a>
-            <span>Building care, Yogyakarta</span>
             <a className="back-to-top" href="#home">Back to top ↑</a>
           </div>
         </div>
